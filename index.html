@@ -5,9 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/style.css" />
+    <script
+      src="https://kit.fontawesome.com/53c0836e62.js"
+      crossorigin="anonymous"
+    ></script>
     <title>Document</title>
   </head>
   <body>
+    <!-- Start HEADER -->
     <section class="header">
       <div class="container">
         <nav>
@@ -34,6 +39,8 @@
         </div>
       </div>
     </section>
+    <!-- /END HEADER -->
+    <!-- Start section YEARS -->
     <section class="years">
       <div class="container">
         <div class="years-wrapper">
@@ -70,6 +77,145 @@
         </div>
       </div>
     </section>
-    
+    <!-- /END section YEARS -->
+    <!-- Start section TEAM -->
+    <section class="team">
+      <div class="container">
+        <div class="block__head">
+          <div class="block__title">This is our team</div>
+          <div class="block__subtitle">We are small but effective and ...</div>
+        </div>
+        <div class="team__content">
+          <div class="team__block">
+            <div class="team__block-photo">
+              <img src="./img/team/mark_1.png" alt="" />
+            </div>
+            <div class="team__block-name">Mark Once</div>
+            <div class="team__block-prof">Designer & Front-End Developer</div>
+            <div class="team__block-socio">
+              <a href="#!"><i class="fa-brands fa-twitter"></i></a>
+              <a href="#!"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+          </div>
+          <div class="team__block">
+            <div class="team__block-photo">
+              <img src="./img/team/justin_2.png" alt="" />
+            </div>
+            <div class="team__block-name">Justin Twice</div>
+            <div class="team__block-prof">Founder & CEO</div>
+            <div class="team__block-socio">
+              <a href="#!"><i class="fa-brands fa-twitter"></i></a>
+              <a href="#!"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+          </div>
+          <div class="team__block">
+            <div class="team__block-photo">
+              <img src="./img/team/antonio_3.png" alt="" />
+            </div>
+            <div class="team__block-name">Antonio Never</div>
+            <div class="team__block-prof">Someone & Somewhere</div>
+            <div class="team__block-socio">
+              <a href="#!"><i class="fa-brands fa-twitter"></i></a>
+              <a href="#!"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- /END section TEAM -->
+    <!-- Start section PROVIDE -->
+    <section class="provide">
+      <div class="container">
+        <div class="block__head">
+          <div class="block__title block__title--provide">
+            We provide you everything
+          </div>
+          <div class="block__subtitle block__subtitle--provide">
+            Maybe not everything, but we provide you some stuff.
+          </div>
+        </div>
+        <div class="provide__inner">
+          <div class="provide__block">
+            <div class="provide__block-img">
+              <i class="fa-solid fa-chart-line"></i>
+            </div>
+            <div class="provide__block-title">Some Analytics</div>
+            <div class="provide__block-text">
+              Aenean nisi lectus, convallis non lorem sit amet, rhoncus
+              malesuada justo
+            </div>
+          </div>
+          <div class="provide__block">
+            <div class="provide__block-img">
+              <i class="fa-solid fa-heart"></i>
+            </div>
+            <div class="provide__block-title">We provide you love</div>
+            <div class="provide__block-text">
+              Aenean nisi lectus, convallis non lorem sit amet, rhoncus
+              malesuada justo
+            </div>
+          </div>
+          <div class="provide__block">
+            <div class="provide__block-img">
+              <i class="fa-solid fa-cloud-arrow-up"></i>
+            </div>
+            <div class="provide__block-title">And Some Cloud</div>
+            <div class="provide__block-text">
+              Aenean nisi lectus, convallis non lorem sit amet, rhoncus
+              malesuada justo
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- /END section PROVIDE -->
+    <!-- Start section CONTACTS -->
+    <section class="contacts">
+      <div class="container">
+        <div class="block__head block__head--contacts">
+          <div class="block__title">Contac Us</div>
+          <div class="block__subtitle">We know what we need to do</div>
+        </div>
+        <div class="contacts__inner">
+          <div class="contacts__block">
+            <a href="tel:555-222-333" target="_blank">
+              <i class="fa-solid fa-phone"></i>
+              <p>555-222-333</p>
+            </a>
+          </div>
+          <div class="contacts__block">
+            <a href="https://goo.gl/maps/8HPsefAF1aLcrXCD8" target="_blank">
+              <i class="fa-solid fa-location-dot"></i>
+              <p>Here is some address</p>
+            </a>
+          </div>
+          <div class="contacts__block">
+            <a href="mailto:somemail@hotmail.com" target="_blank">
+              <i class="fa-solid fa-envelope"></i>
+              <p>somemail@hotmail.com</p>
+            </a>
+          </div>
+        </div>
+        <div class="contacts__form">
+          <input type="text" placeholder="Full Name" />
+          <input type="email" placeholder="Email" />
+          <input type="number" placeholder="Number" />
+          <textarea placeholder="Write your Message here..."></textarea>
+          <button class="">Submit</button>
+        </div>
+      </div>
+    </section>
+    <!-- /END section CONTACTS -->
+    <footer class="footer">
+      <div class="container">
+        <p>
+          <span id="year"></span> Copyright &copy;
+          <a href="#!">Kenan Hamidic</a>. All rights reserved.
+        </p>
+      </div>
+    </footer>
+    <script>
+      document.getElementById("year").innerHTML = new Date().getFullYear();
+    </script>
   </body>
 </html>

@@ -5,6 +5,7 @@
 .menu {
   margin: 0;
   position: absolute;
+  top: 0;
   left: 0;
   right: 0;
   padding: 0;
@@ -65,5 +66,10 @@
   font-weight: 400;
   letter-spacing: 0.04em;
   color: #000000;
+  &:hover{
+    background-color: #707070;
+    color: #00ffff;
+    border: 1px solid #999999;
+  }
 
 }

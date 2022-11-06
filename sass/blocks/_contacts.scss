@@ -1,0 +1,72 @@
+.contacts {
+  text-align: center;
+  margin-bottom: 154px;
+}
+
+.contacts__inner {
+  display: flex;
+  justify-content: center;
+  column-gap: 10%;
+  margin-bottom: 153px;
+}
+
+.contacts__block {
+  width: 150px;
+}
+.contacts__block p {
+  font-family: "HelveticaNeueLTProLt", sans-serif;
+  font-size: 12px;
+  line-height: 26px;
+  font-weight: 400;
+  letter-spacing: 0.02em;
+  color: #898888;
+  &:hover{
+    color: aqua;
+  }
+}
+.contacts__block i {
+  width: 20px;
+  height: 20px;
+  font-size: 20px;
+  color: #323232;
+  &:hover{
+    color: aqua;
+  }
+}
+
+.contacts__form {
+  width: 100%;
+
+   & input {
+    width: 770px;
+    height: 52px;
+    text-align: center;
+    margin-bottom: 20px;
+    border: 1px solid #999999;
+  }
+  & textarea {
+    width: 770px;
+    height: 195px;
+    padding: 22px;
+    margin-bottom: 20px;
+    border: 1px solid #999999;
+  }
+  & button {
+    width: 770px;
+    height: 52px;
+    margin-bottom: 20px;
+    background-color: #161616;
+    font-family: "Helvetica Neue Pro - Md";
+    font-size: 17px;
+    line-height: 26px;
+    font-weight: 400;
+    letter-spacing: 0.02em;
+    color: #fefefe;
+    transition: .2s ease-in;
+    &:hover{
+      background-color: #707070;
+      color: #00ffff;
+      border: 1px solid #999999;
+    }
+  }
+}

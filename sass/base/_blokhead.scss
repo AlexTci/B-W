@@ -1,0 +1,34 @@
+.block__head {
+  padding-top: 138px;
+  margin-bottom: 131px;
+  &--contacts {
+    margin-bottom: 64px;
+  }
+}
+
+.block__title {
+
+  margin-bottom: 13px;
+  font-family: "HelveticaNeueLTProMd", sans-serif;
+  font-size: 34px;
+  line-height: 26px;
+  font-weight: 400;
+  letter-spacing: 0.02em;
+  color: #1d1e1f;
+  &--provide {
+    color: #ffffff;
+  }
+}
+
+.block__subtitle {
+  font-family: "Merriweather-LightItalic", serif;
+  font-size: 16px;
+  line-height: 26px;
+  font-weight: 300;
+  font-style: italic;
+  letter-spacing: 0.02em;
+  color: #898888;
+  &--provide {
+    color: #777777;
+  }
+}

@@ -1,0 +1,11 @@
+.footer {
+    margin-bottom: 30px;
+    text-align: center;
+    & a{
+        color: #616161;
+        transition: .2s ease-in;
+        &:hover{
+            color: #00ffff;
+          }
+    }
+}

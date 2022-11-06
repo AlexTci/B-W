@@ -23,6 +23,14 @@
   .provide__block {
     padding-bottom: 100px;
   }
+  .contacts__inner {
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+  }
+  .contacts__block {
+    width: 100%;
+    margin-bottom: 50px;
+  }
 
   .contacts__form {
     width: 100%;
@@ -38,4 +46,7 @@
       width: 540px;
     }
   }
+  .contacts {
+    margin-bottom: 50px;
+}
 }

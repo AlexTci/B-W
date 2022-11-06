@@ -5,6 +5,8 @@
 
 .contacts__inner {
   display: flex;
+  max-width: 570px;
+  margin: 0 auto;
   justify-content: center;
   column-gap: 10%;
   margin-bottom: 153px;
@@ -20,7 +22,7 @@
   font-weight: 400;
   letter-spacing: 0.02em;
   color: #898888;
-  &:hover{
+  &:hover {
     color: aqua;
   }
 }
@@ -29,24 +31,39 @@
   height: 20px;
   font-size: 20px;
   color: #323232;
-  &:hover{
+  &:hover {
     color: aqua;
   }
 }
 
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button{
+  -webkit-appearance: none;
+}
+
 .contacts__form {
   width: 100%;
+  max-width: 770px;
+  margin: 0 auto;
+  font-family: "HelveticaNeueLTProLt", sans-serif;
+  font-size: 15px;
+  line-height: 26px;
+  font-weight: 400;
+  letter-spacing: 0.02em;
+  color: #898888;
 
-   & input {
+  & input {
     width: 770px;
     height: 52px;
     text-align: center;
     margin-bottom: 20px;
     border: 1px solid #999999;
+
   }
   & textarea {
     width: 770px;
     height: 195px;
+    resize: none;
     padding: 22px;
     margin-bottom: 20px;
     border: 1px solid #999999;
@@ -62,8 +79,8 @@
     font-weight: 400;
     letter-spacing: 0.02em;
     color: #fefefe;
-    transition: .2s ease-in;
-    &:hover{
+    transition: 0.2s ease-in;
+    &:hover {
       background-color: #707070;
       color: #00ffff;
       border: 1px solid #999999;

@@ -1,5 +1,4 @@
 $(document).ready(function () {
-    
   // плавная прокрутка
   $("nav a[href^='#']").click(function (event) {
     event.preventDefault();
@@ -13,8 +12,8 @@ $(document).ready(function () {
     $("nav a[href^='#']").parent().removeClass("active");
     $(this).parent().addClass("active");
     document.body.classList.remove("lock");
-    $('.menu__burger').removeClass("close");
-    $('.menu').removeClass("active");
+    $(".menu__burger").removeClass("close");
+    $(".menu").removeClass("active");
     // $(".menu").toggle(500);
     return false;
   });
@@ -22,8 +21,12 @@ $(document).ready(function () {
   $(".menu__burger-wrapper").click(function (event) {
     event.preventDefault();
     document.body.classList.toggle("lock");
-    $('.menu').toggleClass("active");
+    $(".menu").toggleClass("active");
     // $(".menu").toggle(500);
-    $('.menu__burger').toggleClass("close");
+    $(".menu__burger").toggleClass("close");
   });
+  //   Кноппка вверх
+  $().UItoTop({ easingType: "easeOutQuart" });
+  // Динамический год в строке копирайт
+  document.getElementById("year").innerHTML = new Date().getFullYear();
 });

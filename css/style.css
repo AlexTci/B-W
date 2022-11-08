@@ -128,11 +128,13 @@ html, body {
 
 .menu__burger.close span::after {
   top: -2px;
-  transform: rotate(45deg); }
+  transform: rotate(45deg);
+  transition-duration: .3s, .3s; }
 
 .menu__burger.close span::before {
   top: -2px;
-  transform: rotate(-45deg); }
+  transform: rotate(-45deg);
+  transition-duration: .3s, .3s; }
 
 .nav-menu-desktop {
   position: absolute;
@@ -484,14 +486,18 @@ input::-webkit-inner-spin-button {
     display: flex; }
 
   .menu {
-    display: none;
+    display: block;
     top: 80px;
+    left: -100%;
     flex-direction: column;
     background: #838383;
-    transition: 0.2s linear; }
+    transition: 0.3s linear;
+    opacity: 0; }
 
   .menu.active {
-    display: flex; }
+    display: flex;
+    opacity: 1;
+    left: 0; }
 
   .menu__item {
     max-width: 275px;

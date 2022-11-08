@@ -60,6 +60,7 @@
     height: 2px;
     background-color: #ffffff;
   }
+
 }
 .menu__burger.close span{
   background: none;
@@ -67,10 +68,14 @@
 .menu__burger.close span::after{
   top: -2px;
   transform: rotate(45deg);
+  transition-duration: .3s, .3s;
+
 }
 .menu__burger.close span::before{
   top: -2px;
   transform: rotate(-45deg);
+  transition-duration: .3s, .3s;
+
 }
 .nav-menu-desktop {
   position: absolute;

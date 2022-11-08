@@ -63,14 +63,18 @@
   }
 
   .menu {
-    display: none;
+    display: block;
     top: 80px;
+    left: -100%;
     flex-direction: column;
     background: #838383;
-    transition: 0.2s linear;
+    transition: 0.3s linear;
+    opacity: 0;
   }
 .menu.active{
   display: flex ;
+  opacity: 1;
+  left: 0;
 }
   .menu__item {
     max-width: 275px;

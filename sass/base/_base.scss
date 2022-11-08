@@ -31,7 +31,9 @@
 html, body {
   font-size: 16px;
 }
-
+.lock{
+  overflow: hidden;
+}
 .container {
   max-width: 1200px;
   margin: 0 auto;

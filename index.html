@@ -13,23 +13,37 @@
   </head>
   <body>
     <!-- Start HEADER -->
-    <section class="header none">
+    <nav class="nav-menu-desktop">
+      <ul class="menu">
+        <li class="menu__item active"><a href="#home">Home</a></li>
+        <li class="menu__item"><a href="#years">About Us</a></li>
+        <li class="menu__item"><a href="#team">Team</a></li>
+        <li class="menu__item">
+          <a href="#!"><img src="img/logo.png" alt="logo" class="logo" /></a>
+        </li>
+        <li class="menu__item"><a href="#provide">Services</a></li>
+        <li class="menu__item"><a href="#!">Blog</a></li>
+        <li class="menu__item"><a href="#contacts">Contact Us</a></li>
+      </ul>
+    </nav>
+    <nav class="nav-menu__mobile">
+      <a href="#!"
+        ><img src="img/logo.png" alt="logo" class="logo" id="home"
+      /></a>
+      <div class="menu__burger-wrapper">
+        <div class="menu__burger"><span>toggle</span></div>
+      </div>
+      <ul class="menu">
+        <li class="menu__item active"><a href="#home">Home</a></li>
+        <li class="menu__item"><a href="#years">About Us</a></li>
+        <li class="menu__item"><a href="#team">Team</a></li>
+        <li class="menu__item"><a href="#provide">Services</a></li>
+        <li class="menu__item"><a href="#!">Blog</a></li>
+        <li class="menu__item"><a href="#contacts">Contact Us</a></li>
+      </ul>
+    </nav>
+    <section class="header">
       <div class="container">
-        <nav>
-          <ul class="menu">
-            <li class="menu__item active"><a href="#!">Home</a></li>
-            <li class="menu__item"><a href="#!">About Us</a></li>
-            <li class="menu__item"><a href="#!">Team</a></li>
-            <li class="menu__item">
-              <a href="#!"
-                ><img src="img/logo.png" alt="logo" class="logo"
-              /></a>
-            </li>
-            <li class="menu__item"><a href="#!">Services</a></li>
-            <li class="menu__item"><a href="#!">Blog</a></li>
-            <li class="menu__item"><a href="#!">Contact Us</a></li>
-          </ul>
-        </nav>
         <div class="header__content">
           <h1 class="header__title">We build it with passion</h1>
           <p class="header__text">
@@ -41,7 +55,7 @@
     </section>
     <!-- /END HEADER -->
     <!-- Start section YEARS -->
-    <section class="years">
+    <section class="years" id="years">
       <div class="container">
         <div class="years-wrapper">
           <div class="years__block">
@@ -79,7 +93,7 @@
     </section>
     <!-- /END section YEARS -->
     <!-- Start section TEAM -->
-    <section class="team none">
+    <section class="team" id="team">
       <div class="container">
         <div class="block__head">
           <div class="block__title">This is our team</div>
@@ -124,7 +138,7 @@
     </section>
     <!-- /END section TEAM -->
     <!-- Start section PROVIDE -->
-    <section class="provide none">
+    <section class="provide" id="provide">
       <div class="container">
         <div class="block__head">
           <div class="block__title block__title--provide">
@@ -170,7 +184,7 @@
     </section>
     <!-- /END section PROVIDE -->
     <!-- Start section CONTACTS -->
-    <section class="contacts none">
+    <section class="contacts" id="contacts">
       <div class="container">
         <div class="block__head block__head--contacts">
           <div class="block__title">Contac Us</div>
@@ -229,6 +243,8 @@
         </p>
       </div>
     </footer>
+    <script src="./js/jquery-3.6.1.min.js"></script>
+    <script src="./js/main.js"></script>
     <script>
       document.getElementById("year").innerHTML = new Date().getFullYear();
     </script>

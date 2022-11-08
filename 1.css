@@ -32,17 +32,16 @@
     position: relative;
     padding-top: 128px;
     padding-bottom: 271px;
-    background: url(/img/buildings.png) center 101% repeat-x, url(/img/buildings_back.png) center 101% repeat-x, #1d1d1d; }
+    background: url(/img/buildings.png) center 101% repeat-x, url(/img/buildings_back.png) center 101% repeat-x, #575757 }
   
   .years-wrapper {
     margin-top: 128px;
-    display: grid;
+    display: flex;
+    flex-wrap: wrap;
     grid-gap: 178px;
-    grid-template-rows: max-content max-content;
-    grid-template-columns: max-content max-content;
     justify-content: space-around;
     align-items: stretch;
-    place-content: center center; }
+  }
   
   .years__block {
     display: flex;

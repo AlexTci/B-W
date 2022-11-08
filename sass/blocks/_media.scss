@@ -1,6 +1,9 @@
-@media screen and (max-width: 769px) {
+@media screen and (max-width: 768px) {
   .container {
-    width: 768px;
+    max-width: 768px;
+  }
+  .menu {
+    column-gap: 25px;
   }
   .years {
     height: auto;
@@ -8,7 +11,6 @@
   .years-wrapper {
     margin-top: -50px;
     grid-gap: 30px;
-    grid-template-columns: max-content;
   }
   .team__content {
     flex-wrap: wrap;
@@ -22,6 +24,9 @@
   }
   .provide__block {
     padding-bottom: 100px;
+  }
+  .contacts {
+    margin-bottom: 50px;
   }
   .contacts__inner {
     flex-wrap: wrap;
@@ -37,16 +42,71 @@
     max-width: 540px;
 
     & input {
-      width: 540px;
+      max-width: 540px;
     }
     & textarea {
-      width: 540px;
+      max-width: 540px;
     }
     & button {
-      width: 540px;
+      max-width: 540px;
     }
   }
-  .contacts {
-    margin-bottom: 50px;
 }
+
+@media screen and (max-width: 576px) {
+  .nav-menu-desktop {
+    display: none;
+  }
+
+  .nav-menu__mobile {
+    display: flex;
+  }
+
+  .menu {
+    display: none;
+    top: 80px;
+    flex-direction: column;
+    background: #838383;
+    transition: 0.2s linear;
+  }
+.menu.active{
+  display: flex ;
+}
+  .menu__item {
+    max-width: 275px;
+    font-size: 32px;
+    line-height: 40px;
+    color: #e0e0e0;
+    padding: 10px;
+    border-bottom: 1px solid #fff;
+    width: 100%;
+    text-align: center;
+    &:last-child {
+      border-bottom: none;
+    }
+  }
+
+  .header__content {
+    margin-top: 161px;
+    margin-bottom: 106px;
+    text-align: center;
+  }
+  .header__title {
+    margin-bottom: 50px;
+  }
+
+  .contacts__form {
+    width: 100%;
+    max-width: 420px;
+
+    & input {
+      max-width: 420px;
+    }
+    & textarea {
+      max-width: 420px;
+    }
+    & button {
+      max-width: 420px;
+    }
+  }
 }

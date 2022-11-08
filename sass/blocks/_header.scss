@@ -1,20 +1,102 @@
 .header {
   max-height: 629px;
 }
-
-.menu {
-  margin: 0;
-  position: absolute;
+.nav-menu {
+  // position: fixed;
   top: 0;
   left: 0;
   right: 0;
   padding: 0;
+}
+.nav-menu__mobile {
+  display: none;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+}
+.menu__burger-wrapper {
+  width: 40px;
+  height: 30px;
+  margin-right: 15px;
+  cursor: pointer;
+}
+.menu__burger {
+  display: block;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  width: 40px;
+  height: 40px;
+  background-color: #000000;
+  border-radius: 5px;
+}
+.menu__burger span {
+  display: block;
+  position: absolute;
+  background-color: #ffffff;
+  margin: 0 auto;
+  height: 2px;
+  width: 26px;
+  top: 20px;
+  left: 0;
+  right: 0;
+
+  &::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: -8px;
+    width: 100%;
+    height: 2px;
+    background-color: #ffffff;
+  }
+  &::after {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: -8px;
+    width: 100%;
+    height: 2px;
+    background-color: #ffffff;
+  }
+}
+.menu__burger.close span{
+  background: none;
+}
+.menu__burger.close span::after{
+  top: -2px;
+  transform: rotate(45deg);
+}
+.menu__burger.close span::before{
+  top: -2px;
+  transform: rotate(-45deg);
+}
+.nav-menu-desktop {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
   display: flex;
   justify-content: center;
+  text-align: center;
+  align-items: center;
+  column-gap: 45px;
+}
+.menu {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  text-align: center;
   align-items: center;
   column-gap: 45px;
 }
 .menu__item {
+  width: 100%;
+  max-width: 70px;
   font-family: Roboto;
   font-size: 13px;
   line-height: 17px;
@@ -66,10 +148,9 @@
   font-weight: 400;
   letter-spacing: 0.04em;
   color: #000000;
-  &:hover{
+  &:hover {
     background-color: #707070;
     color: #00ffff;
     border: 1px solid #999999;
   }
-
 }

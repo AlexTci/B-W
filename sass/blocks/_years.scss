@@ -7,14 +7,14 @@
 }
 
 .years-wrapper {
-  margin-top: 128px;
-  display: grid;
-  grid-gap: 178px;
-  grid-template-rows: max-content max-content;
-  grid-template-columns: max-content max-content;
+  display: flex;
+  flex-wrap: wrap;
+  grid-gap: 130px;
+  // grid-template-rows: max-content max-content;
+  // grid-template-columns: max-content max-content;
   justify-content: space-around;
   align-items: stretch;
-  place-content: center center;
+  // place-content: center center;
 }
 .years__block {
   display: flex;
@@ -22,7 +22,7 @@
   text-align: center;
   justify-content: center;
   align-items: center;
-  width: 417px;
+  max-width: 417px;
   height: 276px;
   background-color: #181818;
 }
